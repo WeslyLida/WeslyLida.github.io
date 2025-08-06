@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pictures</title>
+  <link  rel="stylesheet" href="style3.css">
+</head>
+<body>
+<div class="full-img" id="fullImgBox">
+    <img src="album/shitz1.jpg" id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+</div>
+    <div class="img-gallery">
+        <img src="album/shitz1.jpg" onclick="openFullImg(this.src)">
+        <img src="album/shitz2.jpg" onclick="openFullImg(this.src)">
+        <img src="album/cat1.jpg" onclick="openFullImg(this.src)">
+        <img src="album/cat2.jpg" onclick="openFullImg(this.src)">
+        <img src="album/cat3.jpg" onclick="openFullImg(this.src)">
+        <img src="album/cat5.jpg" onclick="openFullImg(this.src)">
+        <img src="album/darts.jpg" onclick="openFullImg(this.src)">
+        <img src="album/dog1.jpg" onclick="openFullImg(this.src)">
+        <img src="album/dog2.jpg" onclick="openFullImg(this.src)">
+        <img src="album/dog3.jpg" onclick="openFullImg(this.src)">
+        <img src="album/dog5.jpg" onclick="openFullImg(this.src)">
+        <img src="album/flower.jpg" onclick="openFullImg(this.src)">
+        <img src="album/horizon.jpg" onclick="openFullImg(this.src)">
+        <img src="album/horizon2.jpg" onclick="openFullImg(this.src)">
+        <img src="album/rabbit1.jpg" onclick="openFullImg(this.src)">
+        <img src="album/rabbit2.jpg" onclick="openFullImg(this.src)">
+    </div>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg= document.getElementById("fullImg");
+    
+    function openFullImg(pic){
+        fullImgBox.style.display="flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display= "none";
+    }
+
+    
+
+
+    
+</script>
+
+
+
+
+
+</body>
+</html>
